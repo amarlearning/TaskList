@@ -1,0 +1,37 @@
+/* CSS declarations go here */
+.checked {
+  text-decoration: line-through;
+  color: #999;
+}
+.addTask > input:nth-child(1) {
+  width: calc(100% - 190px);
+  height: 40px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-width: 120px;
+}
+.btn-primary {
+  width:130px;
+  height: 40px;
+  padding: 7px 35px;
+  margin-left: 40px;
+}
+.hide-finished {
+  margin-top: -20px;
+  line-height: 40px;
+  vertical-align: bottom;
+  font-size: 15px;
+}
+@media screen and (max-width: 400px) {
+  .btn-primary {
+    width: 80px;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 7px 10px;
+  }
+  .addTask > input:nth-child(1) {
+    width: calc(100% - 100px);
+  }
+}
