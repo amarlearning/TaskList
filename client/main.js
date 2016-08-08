@@ -19,9 +19,12 @@ Template.body.helpers({
 Template.body.events ({
   "submit .addTask" : function(event){
     var task = event.target.task.value;
-    Working.insert({
-        title : task,
-        created : new Date()
+    Meteor.call("addTask", task, function(error, result){
+      if(error){
+        console.log("error", error);
+      }
+      if(result){
+      }
     });
     event.target.task.value = "";
     return false;
@@ -33,9 +36,23 @@ Template.body.events ({
 
 Template.listofwords.events({
   "click .delete" : function(){
-    Working.remove(this._id);
+    Meteor.call("removeTask", this._id, function(error, result){
+      if(error){
+        console.log("error", error);
+      }
+      if(result){
+
+      }
+    });
   },
   "click .togglecheck" : function(){
-    Working.update(this._id, {$set : {checked : !this.checked}});
+    Meteor.call("updateTask", this._id, !this.checked, function(error, result){ 
+      if(error){
+        console.log("error", error);
+      }
+      if(result){
+
+      }
+    });
   }
 });

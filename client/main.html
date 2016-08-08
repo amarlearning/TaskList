@@ -1,32 +1,43 @@
 <head>
-  <title>Meteor Application</title>
+  <title>TaskList | Built using Meteor</title>
 </head>
 <body>
   {{> navbar}}
-<div class="container">
-  <div class="jumbotron">
-      {{> middlebody}}
-    <div class="table-responsive">
-    <table class="table table-striped">
-      <thead>
-          <tr>
-            <th>Task</th>
-            <th>Action</th>
-          </tr>
+  <div class="container">
+    <div class="jumbotron">
+      <form class="addTask">
+        <input type="text" name="task" placeholder="Add new task!">
+        <input class="btn btn-lg btn-primary" type="submit" value="Submit">
+      </form>
+      <div class="gap60"></div>
+      <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+            <tr>
+              <th>
+                <div class="hide-finished">
+                  <input type="checkbox" checked="{{hideFinished}}">
+                  <span class="hide-text">Hide Finished tasks</span>
+                </div>
+              </th>
+            </tr>
         </thead>
-        <tbody>
-        {{#each array}}
-          {{> listofwords}}
-        {{/each}}
-      </tbody>
-    </table>
+        <thead>
+            <tr>
+              <th>Task</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+          {{#each array}}
+            {{> listofwords}}
+          {{/each}}
+        </tbody>
+      </table>
+      </div>
     </div>
   </div>
-</div>
 </body>
-
-
-
 <template name="listofwords">
   <tr>
     <td><input class="togglecheck" name="check" type="checkbox" checked={{checked}}>
@@ -34,12 +45,8 @@
     <td><button class="delete">Remove</button></td>
   </tr>
 </template>
-
-
-
-
 <template name="navbar">
-      <nav class="navbar navbar-inverse navbar-static-top">
+      <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -53,39 +60,18 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connect <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Log In</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
+                  <li><a href="#">SignUp</a></li>
                 </ul>
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="">Default</a></li>
-              <li><a href="">Static top</a></li>
-              <li><a href="">Fixed top</a></li>
+              <li><a href="http://amarpandey.me" target="_blank">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
-</template>
-
-<template name="middlebody">
-  <div class="row">
-    <div class="col-md-12">
-      <form class="addTask">
-        <input type="text" name="task" placeholder="Add new task!">
-        <input class="btn btn-lg btn-primary" type="submit" value="Submit">
-      </form>
-      <br>
-      <div class="hide-finished">
-        <input type="checkbox" checked="{{hideFinished}}">
-        <span class="hide-text">Hide Finished tasks</span>
-      </div>
-    </div>
-  </div>
 </template>
