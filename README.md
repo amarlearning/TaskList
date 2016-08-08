@@ -32,9 +32,9 @@ Watch a live demo of it working here <br>
 ***
 
 ##Features
-[:arrow_up:\[Back to Top\]](https://github.com/amarlearning/Pingetron#pingetron)
+[:arrow_up:\[Back to Top\]](https://github.com/amarlearning/TaskList#tasklist)
  
-- *Real time** - Updates content of the page in real time.
+- **Real time** - Updates content of the page in real time.
 - **Easy to use** - You can note down your task very easiely, easy update and delete.
 - **Cross device compatibility** - Add, update and delete you task from your favourite application.
 
