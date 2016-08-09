@@ -36,7 +36,7 @@ Watch a live demo of it working here <br>
  
 - **Real time** - Updates content of the page in real time.
 - **Easy to use** - You can note down your task very easiely, easy update and delete.
-- **Cross device compatibility** - Add, update and delete you task from your favourite application.
+- **Cross device compatibility** - Add, update and delete you task from your favourite device.
 
 ***
 
