@@ -1,12 +1,12 @@
 <h1 align="center" id="tasklist">TaskList</h1>
-<h4 align="center">[Web Application to Note your task!]</h4>
+<h4 align="center">[Web & Android Application to Note your task!]</h4>
 
 <p align="center">
 <a href="https://travis-ci.org/amarlearning/TaskList"><img src="https://travis-ci.org/amarlearning/TaskList.svg?branch=master"></a>
 <a href="http://amarlearning.mit-license.org/"><img src="https://img.shields.io/pypi/l/pyzipcode-cli.svg" alt="mit license"></a>
 <a href="https://github.com/amarlearning/Pingetron/issues"><img src="https://camo.githubusercontent.com/926d8ca67df15de5bd1abac234c0603d94f66c00/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f6e747269627574696f6e732d77656c636f6d652d627269676874677265656e2e7376673f7374796c653d666c6174" alt="Issue"></a>
 </p>
-TaskList is a very simple web application built using Meteor, Blaze and MongoDB. Create an account using facebook, Twitter, Github or simply by selecting by entering username and password and start using TaskList.
+TaskList is a very simple web & Android application built using Meteor, Blaze and MongoDB. Create an account using facebook, Twitter, Github or simply by selecting by entering username and password and start using TaskList.
 
 ##Index
 - [Demo](#demo)
