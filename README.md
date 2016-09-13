@@ -56,6 +56,11 @@ https://github.com/amarlearning/TaskList.git
 cd TaskList
 meteor
 ```
+<b>Note :</b> For Android version of Tasklist run commands : 
+```
+cd TaskList
+meteor run-android
+```
 
 <b>Note :</b> You need to have Meteor installed on your system.
 
