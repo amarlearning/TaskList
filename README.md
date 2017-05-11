@@ -8,7 +8,7 @@
 </p>
 TaskList is a very simple task noting web & Android application built using Meteor, Blaze and MongoDB. Create an account using facebook, Twitter, Github or simply by selecting by entering username and password and start using TaskList.
 
-##Index
+## Index
 - [Demo](#demo)
 - [Features](#features)
 - [Installation](#installation)
@@ -22,7 +22,7 @@ TaskList is a very simple task noting web & Android application built using Mete
 
 ***
 
-##Demo
+## Demo
 [:arrow_up:\[Back to Top\]](https://github.com/amarlearning/TaskList#tasklist)
 
 Watch a live demo of it working here <br>
@@ -31,7 +31,7 @@ Watch a live demo of it working here <br>
 
 ***
 
-##Features
+## Features
 [:arrow_up:\[Back to Top\]](https://github.com/amarlearning/TaskList#tasklist)
  
 - **Real time** - Updates content of the page in real time.
@@ -40,7 +40,7 @@ Watch a live demo of it working here <br>
 
 ***
 
-##Installation
+## Installation
 [:arrow_up:\[Back to Top\]](https://github.com/amarlearning/TaskList#tasklist)
 
 #### Clone it
@@ -89,7 +89,7 @@ You can [tweet me](https://twitter.com/amarpandey007) if you can't get it to wor
 
 ***
 
-##License
+## License
 [:arrow_up:\[Back to Top\]](https://github.com/amarlearning/TaskList#tasklist)
 
 Built with ♥ by Amar Prakash Pandey([@amarlearning](http://github.com/amarlearning)) under [MIT License](http://amarlearning.mit-license.org/) 
